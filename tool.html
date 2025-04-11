@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speechify | Text to Speech Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/tool.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-volume-up"></i>
+            <h1>Speechify</h1>
+        </div>
+        
+        <div class="user-menu">
+            <div class="profile-icon" id="profile-icon">
+                <i class="fas fa-user"></i>
+            </div>
+            <span class="user-email" id="user-email">user@example.com</span>
+            <a href="history.html" class="nav-link">
+                <i class="fas fa-history"></i> History
+            </a>
+            <button class="logout-btn">
+                <i class="fas fa-sign-out-alt"></i> Logout
+            </button>
+        </div>
+    </header>
+    
+    <main>
+        <div class="tool-container">
+            <div class="tool-header">
+                <h2>Text to Speech Converter</h2>
+                
+                <div class="speed-control">
+                    <label for="speed">Speed:</label>
+                    <input type="range" id="speed" min="0.5" max="2" step="0.1" value="1">
+                    <span class="speed-value" id="speed-value">1x</span>
+                </div>
+            </div>
+            
+            <div class="text-area-container">
+                <textarea class="text-area" id="text-to-speech" placeholder="Enter your text here..."></textarea>
+                <div class="char-count" id="char-count">0 characters</div>
+            </div>
+            
+            <div class="action-buttons">
+                <button class="btn btn-primary" id="play-btn">
+                    <i class="fas fa-play"></i> Play
+                </button>
+                <button class="btn btn-secondary" id="pause-btn">
+                    <i class="fas fa-pause"></i> Pause
+                </button>
+                <button class="btn btn-accent" id="stop-btn">
+                    <i class="fas fa-stop"></i> Stop
+                </button>
+                <button class="btn btn-success" id="download-btn">
+                    <i class="fas fa-download"></i> Download
+                </button>
+                <button class="btn btn-secondary" id="clear-btn">
+                    <i class="fas fa-trash"></i> Clear
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/tool.js"></script>
+</body>
+</html>
