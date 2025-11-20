@@ -78,7 +78,7 @@ clearBtn.addEventListener('click', () => {
 // Download button click handler (simulated)
 downloadBtn.addEventListener('click', () => {
     if (textArea.value.trim() === '') {
-        alert('This is under development then how can you download? gaadha hai bsdk tu.....');
+        alert('This is under development then how can you download?');
         return;
     }
     
